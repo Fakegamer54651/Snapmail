@@ -110,6 +110,94 @@ body {
   display: none;
 }
 
+/* Info Sections */
+.info-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 80px 40px;
+  gap: 64px;
+  max-width: 1200px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+.info-left {
+  flex: 0 0 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.info-right {
+  flex: 1 1 500px;
+  max-width: 700px;
+}
+
+.info-image {
+  width: 120px;
+  height: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f0f0f0;
+  border-radius: 20px;
+}
+
+.emoji-icon {
+  font-size: 48px;
+}
+
+.info-right h2 {
+  font-size: 36px;
+  font-weight: 600;
+  margin: 0 0 20px;
+  color: #292929;
+}
+
+.info-right p {
+  font-size: 18px;
+  line-height: 1.6;
+  color: #555;
+  margin: 0;
+}
+
+/* Get Started Section */
+.get-started-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 120px 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+.get-started-title {
+  font-size: 60px;
+  font-weight: 600;
+  line-height: 1.2;
+  margin: 0 0 8px;
+  color: #292929;
+}
+
+.get-started-subtitle {
+  text-transform: uppercase;
+  color: #555;
+  margin-bottom: 30px;
+  font-size: 14px;
+}
+
+.get-started-btn {
+  background-color: #333;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 12px;
+  text-decoration: none;
+  font-weight: 600;
+}
+
 /* Top Right Text Button */
 .link-btn {
   background: none;
@@ -192,5 +280,60 @@ body {
     width: 100%;
     height: 100%;
     object-fit: cover;
+  }
+
+  /* Info Sections Mobile */
+  .info-section {
+    flex-direction: column;
+    align-items: center;
+    padding: 60px 20px;
+    gap: 30px;
+    text-align: center;
+  }
+
+  .info-left, .info-right {
+    max-width: 100%;
+  }
+
+  .info-left {
+    flex: none;
+  }
+
+  .info-image {
+    width: 100px;
+    height: 100px;
+  }
+
+  .emoji-icon {
+    font-size: 40px;
+  }
+
+  .info-right h2 {
+    font-size: 28px;
+  }
+
+  .info-right p {
+    font-size: 16px;
+  }
+
+  /* Get Started Section Mobile */
+  .get-started-section {
+    padding: 80px 20px;
+  }
+
+  .get-started-title {
+    font-size: 36px;
+    line-height: 1.3;
+  }
+
+  .get-started-subtitle {
+    font-size: 14px;
+  }
+
+  .get-started-btn {
+    width: 100%;
+    max-width: 300px;
+    text-align: center;
+    padding: 12px 24px;
   }
 }
