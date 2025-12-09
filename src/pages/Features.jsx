@@ -1,31 +1,34 @@
 import { memo } from 'react';
 import { motion } from 'framer-motion';
-import { useRive, RiveComponent } from '@rive-app/react-canvas';
+import { useRive } from '@rive-app/react-canvas';
 import AnimatedSection, { AnimatedItem } from '../components/ui/AnimatedSection';
 import './Features.css';
-import featurePDF from '@/assets/rive/FeaturePDF.riv'
-import featureEmail from '@/assets/rive/FeatureEmail.riv'
 
 function RivePlayer({ src }) {
-  const { RiveComponent: RiveAnimation } = useRive({
+  const { RiveComponent } = useRive({
     src: src,
     autoplay: true,
+    shouldDisableRiveListeners: true,
   });
 
-  return <RiveAnimation />;
+  return (
+    <div className="rive-wrapper">
+      <RiveComponent />
+    </div>
+  );
 }
 
 const featuresList = [
   {
     title: 'PDF Sign',
     description: 'Sign PDFs instantly without leaving Gmail.',
-    rive: featurePDF,
+    rive: '/rive/FeaturePDF.riv',
     details: ['Live updates', 'Concurrent editing', 'Team presence']
   },
   {
     title: 'Smart Email',
     description: 'Insert driver info instantly with slash commands.',
-    rive: featureEmail,
+    rive: '/rive/FeatureEmail.riv',
     details: ['Custom reports', 'Data visualization', 'Export capabilities']
   },
   {

@@ -50,6 +50,21 @@
   border: 1px solid var(--color-border);
 }
 
+.rive-wrapper {
+  width: 100%;
+  height: 160px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.rive-wrapper canvas {
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: contain;
+}
+
 .feature-item-content {
   flex: 1;
 }

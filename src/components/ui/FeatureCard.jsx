@@ -8,6 +8,7 @@ function FeatureCard({ title, description, riveSrc }) {
   const { RiveComponent } = useRive({
     src: riveSrc,
     autoplay: true,
+    shouldDisableRiveListeners: true,
     stateMachines: 'State Machine 1',
   });
 

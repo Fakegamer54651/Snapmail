@@ -107,12 +107,12 @@ function Home() {
               <FeatureCard
                 title={getTranslation(language, 'features.card1.title')}
                 description={getTranslation(language, 'features.card1.description')}
-                riveSrc="/src/assets/rive/FeatureEmail.riv"
+                riveSrc="/rive/FeatureEmail.riv"
               />
               <FeatureCard
                 title={getTranslation(language, 'features.card2.title')}
                 description={getTranslation(language, 'features.card2.description')}
-                riveSrc="/src/assets/rive/FeaturePDF.riv"
+                riveSrc="/rive/FeaturePDF.riv"
               />
               <div className="feature-card">
                 <div className="feature-card-image"></div>
