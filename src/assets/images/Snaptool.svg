@@ -1,0 +1,7 @@
+<svg width="171" height="16" viewBox="0 0 171 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M0 0H5V5H0V0Z" fill="currentColor"/>
+  <path d="M6 0H11V5H6V0Z" fill="currentColor"/>
+  <path d="M0 6H5V11H0V6Z" fill="currentColor"/>
+  <path d="M6 6H11V11H6V6Z" fill="currentColor"/>
+  <text x="18" y="12" font-family="Poppins, sans-serif" font-weight="700" font-size="12" fill="currentColor">SNAPTOOLS</text>
+</svg>
