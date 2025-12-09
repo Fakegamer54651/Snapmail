@@ -1,19 +1,31 @@
 import { memo } from 'react';
 import { motion } from 'framer-motion';
+import { useRive, RiveComponent } from '@rive-app/react-canvas';
 import AnimatedSection, { AnimatedItem } from '../components/ui/AnimatedSection';
 import './Features.css';
+import featurePDF from '@/assets/rive/FeaturePDF.riv'
+import featureEmail from '@/assets/rive/FeatureEmail.riv'
+
+function RivePlayer({ src }) {
+  const { RiveComponent: RiveAnimation } = useRive({
+    src: src,
+    autoplay: true,
+  });
+
+  return <RiveAnimation />;
+}
 
 const featuresList = [
   {
-    title: 'Real-time Collaboration',
-    description: 'Work together seamlessly with your team in real-time. See changes instantly and collaborate without friction.',
-    icon: '👥',
+    title: 'PDF Sign',
+    description: 'Sign PDFs instantly without leaving Gmail.',
+    rive: featurePDF,
     details: ['Live updates', 'Concurrent editing', 'Team presence']
   },
   {
-    title: 'Advanced Analytics',
-    description: 'Get deep insights into your data with powerful analytics tools and customizable dashboards.',
-    icon: '📊',
+    title: 'Smart Email',
+    description: 'Insert driver info instantly with slash commands.',
+    rive: featureEmail,
     details: ['Custom reports', 'Data visualization', 'Export capabilities']
   },
   {
@@ -73,7 +85,13 @@ function Features() {
               {featuresList.map((feature, index) => (
                 <AnimatedItem key={feature.title} animation="slideUp">
                   <div className={`feature-item card ${index % 2 === 0 ? 'feature-item-accent' : ''}`}>
-                    <div className="feature-item-icon">{feature.icon}</div>
+                    <div className="feature-item-icon">
+                      {feature.rive ? (
+                        <RivePlayer src={feature.rive} />
+                      ) : (
+                        feature.icon
+                      )}
+                    </div>
                     <div className="feature-item-content">
                       <h3 className="feature-item-title">{feature.title}</h3>
                       <p className="feature-item-description">{feature.description}</p>
@@ -111,4 +129,3 @@ function Features() {
 }
 
 export default memo(Features);
-
