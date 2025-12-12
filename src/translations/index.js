@@ -14,7 +14,7 @@ const translations = {
     'hero.ratecons': 'Ratecons in one click',
     'hero.subtitle': 'No ads. No tracking. No data selling.',
     'hero.ctaButton': 'Add to Chrome — Free',
-    'hero.ctaSubtitle': 'Free forever. No subscriptions. No data selling.',
+    'hero.ctaSubtitle': 'Free to use. No subscriptions. No data selling.',
 
     // Features Section
     'features.badge': 'Features',
@@ -87,7 +87,7 @@ const translations = {
     'hero.ratecons': 'Rateconlarni bir bosishda',
     'hero.subtitle': 'Reklama yo\'q. Kuzatuv yo\'q. Ma\'lumot sotish yo\'q.',
     'hero.ctaButton': 'Chrome ga qo\'shish — Bepul',
-    'hero.ctaSubtitle': 'Abadiy bepul. Obuna yo\'q. Ma\'lumot sotish yo\'q.',
+    'hero.ctaSubtitle': 'Bepul. Obuna yo\'q. Ma\'lumot sotish yo\'q.',
 
     // Features Section
     'features.badge': 'Xususiyatlar',
@@ -160,7 +160,7 @@ const translations = {
     'hero.ratecons': 'Подтверждения тарифов в один клик',
     'hero.subtitle': 'Без рекламы. Без отслеживания. Без продажи данных.',
     'hero.ctaButton': 'Добавить в Chrome — Бесплатно',
-    'hero.ctaSubtitle': 'Бесплатно навсегда. Без подписок. Без продажи данных.',
+    'hero.ctaSubtitle': 'Бесплатно. Без подписок. Без продажи данных.',
 
     // Features Section
     'features.badge': 'Функции',
