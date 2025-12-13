@@ -139,13 +139,14 @@ const Terms = () => {
         <section className="terms-section">
           <h2>Free Service & Future Changes</h2>
           <p>SnapTools is currently offered as a free service, with no payments required.</p>
-          <p>"Free forever" refers to the lifetime of the SnapTools product and company — meaning the service is intended to remain free for as long as SnapTools is actively maintained and operated.</p>
+          <p>"We intend to maintain a free tier to ensure accessibility. However, SnapTools may evolve over time. We reserve the right to:</p>
           <p>We reserve the right to:</p>
           <ul>
             <li>Add new features</li>
             <li>Change existing features</li>
             <li>Remove features</li>
             <li>Improve or restructure the service</li>
+            <li>Introduce optional paid features in the future</li>
           </ul>
           <p>If any paid features or pricing model are ever introduced in the future:</p>
           <ul>

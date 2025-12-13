@@ -21,8 +21,8 @@ const translations = {
     'features.title': 'Do it in one click',
     'features.subtitle': 'Works inside DAT & Truckstop. Sign inside Gmail.',
     'features.card1.title': 'SEND EMAILS',
-    'features.card1.description': 'Works inside DAT & Truckstop.',
-    'features.card2.title': 'SIGN PDFS',
+    'features.card1.description': 'Send emails without leaving the Load board.',
+    'features.card2.title': 'SIGN PDF\'s INSIDE GMAIL',
     'features.card2.description': 'Sign directly inside Gmail.',
     'features.card3.title': 'SEND DRIVER INFO',
     'features.card3.description': 'Insert driver name instantly.',
@@ -66,6 +66,10 @@ const translations = {
     'privacy.shield.subtitle': 'tl;dr: We don\'t save your data',
     'privacy.disclaimer': 'Some features rely on third-party services like Gmail. Their own privacy policies apply when you use those services.',
 
+    // Explanation Section
+    'explanation.paragraph1': 'SnapTools works inside Gmail using the Gmail API to help logistics dispatchers send emails, manage PDF attachments, and sign documents directly from their inbox.',
+    'explanation.paragraph2': 'Gmail access is used only for user-initiated actions such as detecting attachments, injecting action buttons, and sending emails when the user clicks send. SnapTools does not store emails or PDFs.',
+
     // Footer
     'footer.privacyPolicy': 'Privacy Policy',
     'footer.terms': 'Terms of Service',
@@ -94,8 +98,8 @@ const translations = {
     'features.title': 'Bir bosishda bajaring',
     'features.subtitle': 'DAT va Truckstop ichida ishlaydi. Gmail ichida imzolang.',
     'features.card1.title': 'EMAIL YUBORISH',
-    'features.card1.description': 'DAT va Truckstop ichida ishlaydi.',
-    'features.card2.title': 'PDF IMZOLASH',
+    'features.card1.description': 'Yuk taxtasini tark etmasdan emaillar yuboring.',
+    'features.card2.title': 'GMAIL ICHIDA PDF IMZOLASH',
     'features.card2.description': 'To\'g\'ridan-to\'g\'ri Gmail ichida imzolang.',
     'features.card3.title': 'HAYDOVCHI MA\'LUMOTI',
     'features.card3.description': 'Haydovchi nomini zudlik bilan kiriting.',
@@ -139,6 +143,10 @@ const translations = {
     'privacy.shield.subtitle': 'Qisqasi: Biz ma\'lumotlaringizni saqlamaymiz',
     'privacy.disclaimer': 'Ba\'zi xususiyatlar Gmail kabi uchinchi tomon xizmatlariga bog\'liq. Ulardan foydalanganingizda o\'zlarining maxfiylik siyosatlari qo\'llaniladi.',
 
+    // Explanation Section
+    'explanation.paragraph1': 'SnapTools Gmail ichida Gmail API yordamida logistika dispetcherlariga emaillar yuborish, PDF qo\'shimchalarini boshqarish va hujjatlarni to\'g\'ridan-to\'g\'ri pochta qutisidan imzolashda yordam beradi.',
+    'explanation.paragraph2': 'Gmail kiritish faqat foydalanuvchi tomonidan boshlangan harakatlar uchun ishlatiladi, masalan, qo\'shimchalarni aniqlash, harakat tugmalarini qo\'shish va foydalanuvchi yuborish tugmasini bosganda emaillarni yuborish. SnapTools emaillarni yoki PDF fayllarini saqlamaydi.',
+
     // Footer
     'footer.privacyPolicy': 'Maxfiylik Siyosati',
     'footer.terms': 'Xizmat Shartlari',
@@ -167,8 +175,8 @@ const translations = {
     'features.title': 'Всё в один клик',
     'features.subtitle': 'Работает внутри DAT и Truckstop. Подпись внутри Gmail.',
     'features.card1.title': 'ОТПРАВКА ПИСЕМ',
-    'features.card1.description': 'Работает внутри DAT и Truckstop.',
-    'features.card2.title': 'ПОДПИСЬ PDF',
+    'features.card1.description': 'Отправляйте письма, не покидая доску грузов.',
+    'features.card2.title': 'ПОДПИСЬ PDF В GMAIL',
     'features.card2.description': 'Подписывайте прямо в Gmail.',
     'features.card3.title': 'ДАННЫЕ ВОДИТЕЛЯ',
     'features.card3.description': 'Мгновенная вставка имени водителя.',
@@ -211,6 +219,10 @@ const translations = {
     'privacy.shield.title': 'Конфиденциальность по дизайну',
     'privacy.shield.subtitle': 'Вкратце: Мы не сохраняем ваши данные',
     'privacy.disclaimer': 'Некоторые функции зависят от сторонних сервисов, таких как Gmail. При их использовании применяются их собственные политики конфиденциальности.',
+
+    // Explanation Section
+    'explanation.paragraph1': 'SnapTools работает внутри Gmail, используя Gmail API, чтобы помочь логистическим диспетчерам отправлять электронные письма, управлять PDF-вложениями и подписывать документы прямо из почтового ящика.',
+    'explanation.paragraph2': 'Доступ к Gmail используется только для действий, инициированных пользователем, таких как обнаружение вложений, добавление кнопок действий и отправка писем, когда пользователь нажимает кнопку отправить. SnapTools не хранит письма или PDF-файлы.',
 
     // Footer
     'footer.privacyPolicy': 'Политика Конфиденциальности',

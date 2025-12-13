@@ -274,6 +274,129 @@
   margin-top: 60px;
 }
 
+.features-cards-new {
+  display: flex;
+  gap: 24px;
+  width: 100%;
+}
+
+.feature-card-split {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  max-width: 600.5px;
+}
+
+.feature-card-split-top {
+  padding: 30px 30px 0 30px;
+  border-radius: 24px 24px 0 0;
+  overflow: hidden;
+}
+
+.feature-card-split-bottom {
+  border-radius: 0 0 24px 24px;
+  overflow: hidden;
+}
+
+.feature-card-green {
+  background: #6EE7B7;
+}
+
+.feature-card-blue {
+  background: #93C5FD;
+}
+
+.feature-card-split-content {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.feature-card-split-header {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.feature-card-logo {
+  display: flex;
+  align-items: flex-end;
+  gap: 5.333px;
+  width: 148px;
+}
+
+.feature-card-logo .logo-icon {
+  width: 23.091px;
+  height: 16px;
+}
+
+.feature-card-logo .logo-text {
+  width: 108px;
+  height: 16px;
+}
+
+.feature-card-logo .logo-r {
+  width: 6.204px;
+  height: 6.204px;
+}
+
+.feature-card-split-header h3 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 43.773px;
+  margin: 0;
+  white-space: nowrap;
+}
+
+.feature-card-green .feature-card-split-header h3 {
+  color: #064E3B;
+}
+
+.feature-card-blue .feature-card-split-header h3 {
+  color: #1E3A8A;
+}
+
+.feature-card-split-content > p {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22.592px;
+  margin: 0;
+}
+
+.feature-card-green .feature-card-split-content > p {
+  color: #064E3B;
+}
+
+.feature-card-blue .feature-card-split-content > p {
+  color: #1E3A8A;
+}
+
+.feature-card-split-image {
+  width: 100%;
+  aspect-ratio: 600.5 / 235;
+  position: relative;
+  overflow: hidden;
+}
+
+.feature-card-split-image img {
+  position: absolute;
+  top: 5.61%;
+  left: 1.41%;
+  width: 97.19%;
+  height: 185.22%;
+  max-width: none;
+  object-fit: cover;
+}
+
+.feature-card-blue .feature-card-split-image img {
+  top: 6.82%;
+  left: 1.29%;
+  width: 97.25%;
+  height: 184%;
+}
+
 .feature-card-image {
   width: 100%;
   height: 387px;
@@ -357,6 +480,20 @@
     gap: 40px;
   }
 
+  .features-cards-new {
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  .feature-card-split {
+    max-width: 100%;
+  }
+
+  .feature-card-split-header h3 {
+    font-size: 24px;
+    line-height: 32px;
+  }
+
   .integrations-section {
     flex-direction: column;
     gap: 40px;
@@ -392,6 +529,24 @@
 
   .feature-card-image {
     height: 280px;
+  }
+
+  .features-cards-new {
+    gap: 20px;
+  }
+
+  .feature-card-split-top {
+    padding: 20px 20px 0 20px;
+  }
+
+  .feature-card-split-header h3 {
+    font-size: 20px;
+    line-height: 28px;
+  }
+
+  .feature-card-split-content > p {
+    font-size: 11px;
+    line-height: 18px;
   }
 
   .integrations-logos {
@@ -604,7 +759,7 @@
 .privacy-section {
   background: var(--color-bg-primary);
   padding-top: 128px;
-  padding-bottom: 200px;
+  padding-bottom: 80px;
 }
 
 .privacy-container {
@@ -969,5 +1124,62 @@
   .privacy-shield-content h3 {
     font-size: 28px;
     line-height: 38px;
+  }
+}
+
+/* Explanation Section */
+.explanation-section {
+  background: var(--color-bg-primary);
+  padding-top: 80px;
+  padding-bottom: 200px;
+}
+
+.explanation-container {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 115px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.explanation-content {
+  width: 520px;
+  max-width: 100%;
+}
+
+.explanation-content p {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 26px;
+  color: #727179;
+  letter-spacing: 0.05px;
+  margin: 0;
+}
+
+@media (max-width: 1024px) {
+  .explanation-container {
+    padding: 0 40px;
+  }
+
+  .explanation-content {
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .explanation-section {
+    padding-top: 60px;
+  }
+
+  .explanation-container {
+    padding: 0 20px;
+  }
+
+  .explanation-content p {
+    font-size: 16px;
+    line-height: 24px;
   }
 }

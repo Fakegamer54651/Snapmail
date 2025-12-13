@@ -23,6 +23,16 @@ const PDF_ICON_URL = "https://www.figma.com/api/mcp/asset/31335abf-a0cf-42cb-940
 const AVATAR1_URL = "https://www.figma.com/api/mcp/asset/bace61ed-a0b1-419c-bddd-bdc613892e33";
 const AVATAR2_URL = "https://www.figma.com/api/mcp/asset/96359029-74e1-44fe-8711-fe162628658b";
 
+// Feature card images and logos from new Figma design (updated)
+const FEATURE_SIGN_PDF_SCREENSHOT = "https://www.figma.com/api/mcp/asset/6e992a32-7ab4-4042-8901-5c41c271d6f5";
+const FEATURE_SEND_EMAIL_SCREENSHOT = "https://www.figma.com/api/mcp/asset/bb130214-50bf-4efd-af58-77cea2bbd127";
+const SNAPSIGN_LOGO_ICON = "https://www.figma.com/api/mcp/asset/54d31e45-6885-4a3b-9c8f-378ad7405887";
+const SNAPSIGN_LOGO_TEXT = "https://www.figma.com/api/mcp/asset/0e48781a-c9af-4a0c-a124-c05808b2889d";
+const SNAPSIGN_LOGO_R = "https://www.figma.com/api/mcp/asset/674f4deb-177a-4f1b-af64-22637f46ee82";
+const SNAPMAIL_LOGO_ICON = "https://www.figma.com/api/mcp/asset/18ef0ed5-75a9-4232-b039-889afaa07619";
+const SNAPMAIL_LOGO_TEXT = "https://www.figma.com/api/mcp/asset/efee9641-3411-46a5-a68c-4336a928e83a";
+const SNAPMAIL_LOGO_R = "https://www.figma.com/api/mcp/asset/046dd136-0372-44b9-b431-51c95e48e7a1";
+
 function Home() {
   const { language } = useLanguage();
   
@@ -103,22 +113,45 @@ function Home() {
           </AnimatedSection>
 
           <AnimatedSection animation="slideUp" delay={0.1}>
-            <div className="features-grid">
-              <FeatureCard
-                title={getTranslation(language, 'features.card1.title')}
-                description={getTranslation(language, 'features.card1.description')}
-                riveSrc="/rive/FeatureEmail.riv"
-              />
-              <FeatureCard
-                title={getTranslation(language, 'features.card2.title')}
-                description={getTranslation(language, 'features.card2.description')}
-                riveSrc="/rive/FeaturePDF.riv"
-              />
-              <div className="feature-card">
-                <div className="feature-card-image"></div>
-                <div className="feature-card-content">
-                  <h3>{getTranslation(language, 'features.card3.title')}</h3>
-                  <p>{getTranslation(language, 'features.card3.description')}</p>
+            <div className="features-cards-new">
+              <div className="feature-card-split">
+                <div className="feature-card-split-top feature-card-green">
+                  <div className="feature-card-split-content">
+                    <div className="feature-card-split-header">
+                      <div className="feature-card-logo">
+                        <img src={SNAPSIGN_LOGO_ICON} alt="" className="logo-icon" />
+                        <img src={SNAPSIGN_LOGO_TEXT} alt="SNAPSIGN" className="logo-text" />
+                        <img src={SNAPSIGN_LOGO_R} alt="" className="logo-r" />
+                      </div>
+                      <h3>{getTranslation(language, 'features.card2.title')}</h3>
+                    </div>
+                    <p>{getTranslation(language, 'features.card2.description')}</p>
+                  </div>
+                </div>
+                <div className="feature-card-split-bottom feature-card-green">
+                  <div className="feature-card-split-image">
+                    <img src={FEATURE_SIGN_PDF_SCREENSHOT} alt="Sign PDFs inside Gmail" />
+                  </div>
+                </div>
+              </div>
+              <div className="feature-card-split">
+                <div className="feature-card-split-top feature-card-blue">
+                  <div className="feature-card-split-content">
+                    <div className="feature-card-split-header">
+                      <div className="feature-card-logo">
+                        <img src={SNAPMAIL_LOGO_ICON} alt="" className="logo-icon" />
+                        <img src={SNAPMAIL_LOGO_TEXT} alt="SNAPMAIL" className="logo-text" />
+                        <img src={SNAPMAIL_LOGO_R} alt="" className="logo-r" />
+                      </div>
+                      <h3>{getTranslation(language, 'features.card1.title')}</h3>
+                    </div>
+                    <p>{getTranslation(language, 'features.card1.description')}</p>
+                  </div>
+                </div>
+                <div className="feature-card-split-bottom feature-card-blue">
+                  <div className="feature-card-split-image">
+                    <img src={FEATURE_SEND_EMAIL_SCREENSHOT} alt="Send emails from load board" />
+                  </div>
                 </div>
               </div>
             </div>
@@ -301,6 +334,22 @@ function Home() {
               </div>
               <p className="privacy-disclaimer">
                 {getTranslation(language, 'privacy.disclaimer')}
+              </p>
+            </div>
+          </AnimatedSection>
+        </div>
+      </section>
+
+      <section className="explanation-section">
+        <div className="explanation-container">
+          <AnimatedSection animation="slideUp">
+            <div className="explanation-content">
+              <p>
+                {getTranslation(language, 'explanation.paragraph1')}
+              </p>
+              <p>&nbsp;</p>
+              <p>
+                {getTranslation(language, 'explanation.paragraph2')}
               </p>
             </div>
           </AnimatedSection>
