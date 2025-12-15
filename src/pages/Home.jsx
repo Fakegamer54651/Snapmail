@@ -1,5 +1,6 @@
-import { memo } from 'react';
+import { memo, useEffect } from 'react';
 import { motion } from 'framer-motion';
+import { useLocation } from 'react-router-dom';
 import AnimatedSection from '../components/ui/AnimatedSection';
 import FeatureCard from '../components/ui/FeatureCard';
 import { useLanguage } from '../contexts/LanguageContext';
@@ -35,6 +36,27 @@ const SNAPMAIL_LOGO_R = "https://www.figma.com/api/mcp/asset/046dd136-0372-44b9-
 
 function Home() {
   const { language } = useLanguage();
+  const location = useLocation();
+  
+  useEffect(() => {
+    // Handle scroll to section when navigating from another page
+    if (location.state?.scrollTo) {
+      const hash = location.state.scrollTo;
+      setTimeout(() => {
+        const element = document.getElementById(hash);
+        if (element) {
+          const navbarHeight = 56;
+          const elementPosition = element.getBoundingClientRect().top + window.pageYOffset;
+          const offsetPosition = elementPosition - navbarHeight - 20;
+          
+          window.scrollTo({
+            top: offsetPosition,
+            behavior: 'smooth'
+          });
+        }
+      }, 100);
+    }
+  }, [location]);
   
   return (
     <motion.main

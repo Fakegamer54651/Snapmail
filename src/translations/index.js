@@ -1,6 +1,7 @@
 const translations = {
   EN: {
     // Navbar
+    'nav.about': 'About',
     'nav.features': 'Features',
     'nav.feedback': 'Feedback',
     'nav.privacy': 'Privacy',
@@ -70,6 +71,27 @@ const translations = {
     'explanation.paragraph1': 'SnapTools works inside Gmail using the Gmail API to help logistics dispatchers send emails, manage PDF attachments, and sign documents directly from their inbox.',
     'explanation.paragraph2': 'Gmail access is used only for user-initiated actions such as detecting attachments, injecting action buttons, and sending emails when the user clicks send. SnapTools does not store emails or PDFs.',
 
+    // Support Page
+    'support.contact.title': 'Support',
+    'support.contact.subtitle': 'If you have any questions or need some kind of support just contact me.',
+    'support.contact.name': 'Asilbek Khamidullayev',
+    'support.contact.role': 'Contact me',
+
+    // About Page
+    'about.reason.label': 'Reason',
+    'about.reason.title': 'Why SnapTools exists?',
+    'about.reason.subtitle': 'SnapTools was built to make everyday logistics work simpler.',
+    'about.reason.description': 'Many dispatchers rely on multiple tools or pay for software that offers more than they actually need. SnapTools focuses on a small set of essential features and delivers them in a fast, straightforward way.\n— Without unnecessary complexity.',
+    'about.team.label': 'Team',
+    'about.team.title': 'Who\'s behind SnapTools ',
+    'about.team.subtitle': 'Built by a small team focused on solving real operational problems.',
+    'about.team.member1.name': 'Asilbek Khamidullayev',
+    'about.team.member1.role': 'Founder / Product designer',
+    'about.team.member1.description': 'Designed and built SnapTools.\nMostly focused on making it usable and not annoying.',
+    'about.team.member2.name': 'Asadbek Ergashev',
+    'about.team.member2.role': 'Backend Engineer',
+    'about.team.member2.description': 'Handles backend architecture, data, and system stability.',
+
     // Footer
     'footer.privacyPolicy': 'Privacy Policy',
     'footer.terms': 'Terms of Service',
@@ -78,6 +100,7 @@ const translations = {
   
   UZ: {
     // Navbar
+    'nav.about': 'Biz haqimizda',
     'nav.features': 'Xususiyatlar',
     'nav.feedback': 'Fikrlar',
     'nav.privacy': 'Maxfiylik',
@@ -147,6 +170,27 @@ const translations = {
     'explanation.paragraph1': 'SnapTools Gmail ichida Gmail API yordamida logistika dispetcherlariga emaillar yuborish, PDF qo\'shimchalarini boshqarish va hujjatlarni to\'g\'ridan-to\'g\'ri pochta qutisidan imzolashda yordam beradi.',
     'explanation.paragraph2': 'Gmail kiritish faqat foydalanuvchi tomonidan boshlangan harakatlar uchun ishlatiladi, masalan, qo\'shimchalarni aniqlash, harakat tugmalarini qo\'shish va foydalanuvchi yuborish tugmasini bosganda emaillarni yuborish. SnapTools emaillarni yoki PDF fayllarini saqlamaydi.',
 
+    // Support Page
+    'support.contact.title': 'Yordam',
+    'support.contact.subtitle': 'Agar savollaringiz bo\'lsa yoki qandaydir yordam kerak bo\'lsa, menga murojaat qiling.',
+    'support.contact.name': 'Asilbek Xomidullayev',
+    'support.contact.role': 'Men bilan bog\'laning',
+
+    // About Page
+    'about.reason.label': 'Sabab',
+    'about.reason.title': 'Nima uchun SnapTools mavjud?',
+    'about.reason.subtitle': 'SnapTools kundalik logistika ishlarini soddalashtirishga yordam berish uchun yaratilgan.',
+    'about.reason.description': 'Ko\'plab dispetcherlar bir nechta vositalarga tayanadi yoki ular haqiqatda kerak bo\'lganidan ko\'proq imkoniyatlarni taklif qiladigan dasturiy ta\'minot uchun to\'laydilar. SnapTools muhim xususiyatlarning kichik to\'plamiga e\'tibor qaratadi va ularni tez, sodda tarzda taqdim etadi.\n— Keraksiz murakkabliklarsiz.',
+    'about.team.label': 'Jamoa',
+    'about.team.title': 'SnapTools ortida kim bor ',
+    'about.team.subtitle': 'Haqiqiy operatsion muammolarni hal qilishga e\'tibor qaratadigan kichik jamoa tomonidan yaratilgan.',
+    'about.team.member1.name': 'Asilbek Xomidullayev',
+    'about.team.member1.role': 'Asoschisi / Mahsulot dizayneri',
+    'about.team.member1.description': 'SnapTools-ni loyihalashtirdi va yaratdi.\nAsosan uni foydalanish uchun qulay va zerikarli bo\'lmasligiga e\'tibor qaratadi.',
+    'about.team.member2.name': 'Asadbek Ergashev',
+    'about.team.member2.role': 'Backend muhandisi',
+    'about.team.member2.description': 'Backend arxitekturasi, ma\'lumotlar va tizim barqarorligi bilan shug\'ullanadi.',
+
     // Footer
     'footer.privacyPolicy': 'Maxfiylik Siyosati',
     'footer.terms': 'Xizmat Shartlari',
@@ -155,6 +199,7 @@ const translations = {
 
   RU: {
     // Navbar
+    'nav.about': 'О нас',
     'nav.features': 'Функции',
     'nav.feedback': 'Отзывы',
     'nav.privacy': 'Конфиденциальность',
@@ -223,6 +268,27 @@ const translations = {
     // Explanation Section
     'explanation.paragraph1': 'SnapTools работает внутри Gmail, используя Gmail API, чтобы помочь логистическим диспетчерам отправлять электронные письма, управлять PDF-вложениями и подписывать документы прямо из почтового ящика.',
     'explanation.paragraph2': 'Доступ к Gmail используется только для действий, инициированных пользователем, таких как обнаружение вложений, добавление кнопок действий и отправка писем, когда пользователь нажимает кнопку отправить. SnapTools не хранит письма или PDF-файлы.',
+
+    // Support Page
+    'support.contact.title': 'Поддержка',
+    'support.contact.subtitle': 'Если у вас есть вопросы или нужна какая-либо поддержка, просто свяжитесь со мной.',
+    'support.contact.name': 'Асилбек Хамидуллаев',
+    'support.contact.role': 'Свяжитесь со мной',
+
+    // About Page
+    'about.reason.label': 'Причина',
+    'about.reason.title': 'Почему существует SnapTools?',
+    'about.reason.subtitle': 'SnapTools был создан, чтобы упростить повседневную логистическую работу.',
+    'about.reason.description': 'Многие диспетчеры полагаются на несколько инструментов или платят за программное обеспечение, которое предлагает больше, чем им на самом деле нужно. SnapTools фокусируется на небольшом наборе основных функций и предоставляет их быстрым и простым способом.\n— Без лишней сложности.',
+    'about.team.label': 'Команда',
+    'about.team.title': 'Кто стоит за SnapTools ',
+    'about.team.subtitle': 'Создано небольшой командой, сосредоточенной на решении реальных операционных проблем.',
+    'about.team.member1.name': 'Асилбек Хамидуллаев',
+    'about.team.member1.role': 'Основатель / Продукт-дизайнер',
+    'about.team.member1.description': 'Разработал и создал SnapTools.\nВ основном сосредоточен на том, чтобы сделать его удобным и ненавязчивым.',
+    'about.team.member2.name': 'Асадбек Эргашев',
+    'about.team.member2.role': 'Backend инженер',
+    'about.team.member2.description': 'Отвечает за backend архитектуру, данные и стабильность системы.',
 
     // Footer
     'footer.privacyPolicy': 'Политика Конфиденциальности',

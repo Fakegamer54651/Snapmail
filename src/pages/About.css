@@ -1,0 +1,403 @@
+.about-page {
+  background: var(--color-bg-primary);
+  min-height: 100vh;
+}
+
+/* Reason Section */
+.reason-section {
+  position: relative;
+  padding-top: 128px;
+  padding-bottom: 126px;
+  background: white;
+  overflow: hidden;
+}
+
+.reason-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url('https://www.figma.com/api/mcp/asset/b465086f-8260-4bad-a84a-7d51c27a9dbc');
+  background-size: cover;
+  background-position: center;
+  opacity: 0.3;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.reason-container {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 115px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  z-index: 1;
+}
+
+.reason-content {
+  max-width: 900px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.reason-header {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.reason-label {
+  font-family: 'Roboto Flex', sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  background: linear-gradient(90deg, #828282 0%, #505050 73.676%, #222222 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin: 0;
+}
+
+.reason-title {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  font-size: 44px;
+  line-height: 62px;
+  color: #0a0a0a;
+  margin: 0;
+  white-space: nowrap;
+}
+
+.reason-subtitle {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  font-size: 22.5px;
+  line-height: 40px;
+  color: #121722;
+  margin: 0;
+}
+
+.reason-description {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  font-size: 22.5px;
+  line-height: 40px;
+  color: #121722;
+  margin: 0;
+  white-space: pre-wrap;
+}
+
+@media (max-width: 1024px) {
+  .reason-container {
+    padding: 0 40px;
+  }
+
+  .reason-content {
+    max-width: 100%;
+  }
+
+  .reason-title {
+    font-size: 36px;
+    line-height: 52px;
+  }
+
+  .reason-subtitle,
+  .reason-description {
+    font-size: 20px;
+    line-height: 36px;
+  }
+}
+
+@media (max-width: 768px) {
+  .reason-section {
+    padding-top: calc(var(--navbar-height) + 60px);
+    padding-bottom: 80px;
+  }
+
+  .reason-container {
+    padding: 0 20px;
+  }
+
+  .reason-content {
+    gap: 32px;
+  }
+
+  .reason-title {
+    font-size: 32px;
+    line-height: 44px;
+    white-space: normal;
+  }
+
+  .reason-subtitle,
+  .reason-description {
+    font-size: 18px;
+    line-height: 32px;
+  }
+
+  .reason-label {
+    font-size: 16px;
+    line-height: 20px;
+  }
+}
+
+/* Team Section */
+.team-section {
+  background: white;
+  padding-top: 0;
+  padding-bottom: 126px;
+}
+
+.team-container {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 115px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.team-content {
+  width: 900px;
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+}
+
+.team-header {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.team-label {
+  font-family: 'Roboto Flex', sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  background: linear-gradient(90deg, #828282 0%, #505050 73.676%, #222222 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin: 0;
+}
+
+.team-title {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  font-size: 44px;
+  line-height: 62px;
+  color: #0a0a0a;
+  margin: 0;
+  white-space: nowrap;
+}
+
+.team-subtitle {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  font-size: 22.5px;
+  line-height: 40px;
+  color: #121722;
+  margin: 0;
+}
+
+.team-members {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.team-member {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+}
+
+
+.team-member-image {
+  width: 224px;
+  height: 280px;
+  border-radius: 4px;
+  overflow: hidden;
+  box-shadow: 0px 0px 0px 2px rgba(0, 0, 0, 0.05);
+  flex-shrink: 0;
+  position: relative;
+}
+
+.team-member-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.team-member:first-child .team-member-image img {
+  position: absolute;
+  top: -28.06%;
+  left: -12.03%;
+  width: 232.74%;
+  height: 140.26%;
+  max-width: none;
+  object-fit: cover;
+}
+
+.team-member-info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.team-member-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.team-member-text h3 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  font-size: 44px;
+  line-height: 62px;
+  color: #0a0a0a;
+  margin: 0;
+}
+
+.team-member-role {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  font-size: 22.5px;
+  line-height: 40px;
+  color: #727179;
+  margin: 0;
+}
+
+.team-member-description {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 32px;
+  color: #121722;
+  margin: 0;
+  white-space: pre-wrap;
+}
+
+.team-member-socials {
+  display: flex;
+  gap: 4px;
+}
+
+.social-link {
+  width: 24px;
+  height: 24px;
+  border-radius: 9999px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.2s ease;
+}
+
+.social-link:hover {
+  transform: scale(1.1);
+}
+
+.social-link img {
+  width: 16px;
+  height: 16px;
+}
+
+@media (max-width: 1024px) {
+  .team-container {
+    padding: 0 40px;
+  }
+
+  .team-content {
+    max-width: 100%;
+    gap: 60px;
+  }
+
+  .team-title {
+    font-size: 36px;
+    line-height: 52px;
+  }
+
+  .team-subtitle {
+    font-size: 20px;
+    line-height: 36px;
+  }
+
+  .team-member {
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  .team-member-reverse {
+    flex-direction: column;
+  }
+
+  .team-member-image {
+    width: 100%;
+    max-width: 300px;
+  }
+
+  .team-member-text h3 {
+    font-size: 32px;
+    line-height: 44px;
+  }
+
+  .team-member-role {
+    font-size: 20px;
+    line-height: 36px;
+  }
+
+  .team-member-description {
+    font-size: 16px;
+    line-height: 28px;
+  }
+}
+
+@media (max-width: 768px) {
+  .team-section {
+    padding-bottom: 80px;
+  }
+
+  .team-container {
+    padding: 0 20px;
+  }
+
+  .team-content {
+    gap: 48px;
+  }
+
+  .team-title {
+    font-size: 32px;
+    line-height: 44px;
+    white-space: normal;
+  }
+
+  .team-subtitle {
+    font-size: 18px;
+    line-height: 32px;
+  }
+
+  .team-label {
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  .team-member-text h3 {
+    font-size: 28px;
+    line-height: 38px;
+  }
+
+  .team-member-role {
+    font-size: 18px;
+    line-height: 32px;
+  }
+}
+

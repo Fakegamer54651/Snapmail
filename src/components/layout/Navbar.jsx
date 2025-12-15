@@ -1,5 +1,5 @@
 import { useState, useEffect, useRef } from 'react';
-import { Link, useLocation } from 'react-router-dom';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { useLanguage } from '../../contexts/LanguageContext';
 import { getTranslation } from '../../translations';
 import './Navbar.css';
@@ -18,13 +18,15 @@ function Navbar() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [isLangDropdownOpen, setIsLangDropdownOpen] = useState(false);
   const location = useLocation();
+  const navigate = useNavigate();
   const { language, setLanguage } = useLanguage();
   const langDropdownRef = useRef(null);
 
   const navLinks = [
     { name: getTranslation(language, 'nav.features'), path: '/#features', isHash: true },
     { name: getTranslation(language, 'nav.feedback'), path: '/#feedback', isHash: true },
-    { name: getTranslation(language, 'nav.privacy'), path: '/#privacy', isHash: true }
+    { name: getTranslation(language, 'nav.privacy'), path: '/#privacy', isHash: true },
+    { name: getTranslation(language, 'nav.about'), path: '/about', isHash: false }
   ];
 
   useEffect(() => {
@@ -68,6 +70,14 @@ function Navbar() {
     if (link.isHash) {
       e.preventDefault();
       const hash = link.path.split('#')[1];
+      
+      // If we're not on the home page, navigate to home with the hash
+      if (location.pathname !== '/') {
+        navigate('/', { state: { scrollTo: hash } });
+        return;
+      }
+      
+      // If we're on the home page, scroll to the section
       const element = document.getElementById(hash);
       if (element) {
         const navbarHeight = 56;

@@ -1,0 +1,152 @@
+.support-page {
+  background: white;
+}
+
+/* Contact Section */
+.contact-section {
+  background: white;
+  padding-top: 128px;
+  padding-bottom: 200px;
+}
+
+.contact-container {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 115px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact-content {
+  width: 530px;
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.contact-header {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  align-items: center;
+  text-align: center;
+}
+
+.contact-title {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  font-size: 44px;
+  line-height: 62px;
+  color: #0a0a0a;
+  margin: 0;
+  white-space: nowrap;
+}
+
+.contact-subtitle {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  font-size: 22.5px;
+  line-height: 40px;
+  color: #121722;
+  margin: 0;
+}
+
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  align-items: center;
+  text-align: center;
+}
+
+.contact-person {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-person-name {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  font-size: 44px;
+  line-height: 62px;
+  color: #0a0a0a;
+  margin: 0;
+}
+
+.contact-person-role {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  font-size: 22.5px;
+  line-height: 40px;
+  color: #727179;
+  margin: 0;
+}
+
+.contact-socials {
+  display: flex;
+  gap: 4px;
+}
+
+.contact-social-link {
+  width: 24px;
+  height: 24px;
+  border-radius: 9999px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.2s ease;
+}
+
+.contact-social-link:hover {
+  transform: scale(1.1);
+}
+
+.contact-social-link img {
+  width: 16px;
+  height: 16px;
+}
+
+@media (max-width: 1024px) {
+  .contact-container {
+    padding: 0 40px;
+  }
+}
+
+@media (max-width: 768px) {
+  .contact-section {
+    padding-top: 80px;
+    padding-bottom: 120px;
+  }
+
+  .contact-container {
+    padding: 0 20px;
+  }
+
+  .contact-content {
+    width: 100%;
+    gap: 32px;
+  }
+
+  .contact-title {
+    font-size: 36px;
+    line-height: 52px;
+  }
+
+  .contact-subtitle {
+    font-size: 20px;
+    line-height: 36px;
+  }
+
+  .contact-person-name {
+    font-size: 32px;
+    line-height: 44px;
+  }
+
+  .contact-person-role {
+    font-size: 20px;
+    line-height: 36px;
+  }
+}
+
