@@ -3,8 +3,7 @@ import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-route
 import { AnimatePresence } from 'framer-motion';
 import Navbar from './components/layout/Navbar';
 import Footer from './components/layout/Footer';
-
-const LOGO_URL = "https://www.figma.com/api/mcp/asset/efa03553-ec2a-4d9f-b31c-648084987728";
+import SnaptoolsLogoNav from './assets/images/SnaptoolsLogoNav.svg';
 
 function MobileMessage() {
   return (
@@ -18,7 +17,7 @@ function MobileMessage() {
       padding: '40px 20px',
       textAlign: 'center'
     }} className="mobile-only">
-      <img src={LOGO_URL} alt="SNAPTOOLS" style={{ width: '171px', height: '16px', marginBottom: '40px' }} />
+      <img src={SnaptoolsLogoNav} alt="SNAPTOOLS" style={{ width: '171px', height: '16px', marginBottom: '40px' }} />
       <h2 style={{
         fontFamily: 'Poppins, sans-serif',
         fontSize: '24px',

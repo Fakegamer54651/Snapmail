@@ -7,32 +7,30 @@ import { useLanguage } from '../contexts/LanguageContext';
 import { getTranslation } from '../translations';
 import './Home.css';
 
-const CHROME_ICON_URL = "https://www.figma.com/api/mcp/asset/c7aef9f3-c1e9-4f19-8d2c-4a96376850a5";
-const DAT_LOGO_URL = "https://www.figma.com/api/mcp/asset/1a25950e-2fcc-4134-88a3-27eaee94cda9";
-const TRUCKSTOP_LOGO_URL = "https://www.figma.com/api/mcp/asset/6b477dd8-25a1-4cd3-805b-605c8e3a9167";
-const SIGN_VECTOR_URL = "https://www.figma.com/api/mcp/asset/f68272ca-a172-41d4-9ebe-16b4eea209f0";
-const SPARKLE_ICON_URL = "https://www.figma.com/api/mcp/asset/a965304b-11ad-4393-bfe9-a5f749bcbddb";
-const DAT_LOGO_SMALL_URL = "https://www.figma.com/api/mcp/asset/647039f6-0d50-40fd-89b7-f18f7007e48b";
-const TRUCKSTOP_LOGO_SMALL_URL = "https://www.figma.com/api/mcp/asset/c118173c-6b44-4a82-84df-bdb464017782";
-const GMAIL_LOGO_URL = "https://www.figma.com/api/mcp/asset/8c65ec4f-5808-41f3-8e14-f42abcddfda1";
-const USER_ICON_URL = "https://www.figma.com/api/mcp/asset/95a7293f-5ae1-4bb2-9f16-3bbe545904e5";
-const USER_AVATAR_URL = "https://www.figma.com/api/mcp/asset/0d509a82-cd82-461a-84e7-c9f62399e5b1";
-const USER_AVATAR2_URL = "https://www.figma.com/api/mcp/asset/a3d8ef65-a075-4358-aa89-04cfb299b92e";
-const PRIVACY_ICON_URL = "https://www.figma.com/api/mcp/asset/cd475649-63f4-4ece-b2ee-0a31893534ae";
-const SHIELD_LARGE_URL = "https://www.figma.com/api/mcp/asset/f9f39ff9-cc82-4c85-82a1-b2ecd27945f7";
-const PDF_ICON_URL = "https://www.figma.com/api/mcp/asset/31335abf-a0cf-42cb-940c-a32e32953c15";
-const AVATAR1_URL = "https://www.figma.com/api/mcp/asset/bace61ed-a0b1-419c-bddd-bdc613892e33";
-const AVATAR2_URL = "https://www.figma.com/api/mcp/asset/96359029-74e1-44fe-8711-fe162628658b";
+// Local image assets mapped to descriptive filenames
+import CHROME_ICON_URL from '../assets/images/ChromeIconButtonNav.svg';
+import DAT_LOGO_URL from '../assets/images/HeroSectionDATLogo.svg';
+import TRUCKSTOP_LOGO_URL from '../assets/images/IntegrationTruckStopLogo.svg';
+import HERO_SIGN_GRAPHIC from '../assets/images/HeroSignGraphic.svg';
+import SPARKLE_ICON_URL from '../assets/images/FeaturesTagIcon.svg';
+import DAT_LOGO_SMALL_URL from '../assets/images/IntegrationDatLogo.svg';
+import TRUCKSTOP_LOGO_SMALL_URL from '../assets/images/IntegrationTruckStopLogo.svg';
+import GMAIL_LOGO_URL from '../assets/images/IntegrationGmailLogo.svg';
+import USER_ICON_URL from '../assets/images/FeedbackBadgeIcon.svg';
+import DISPATCHER_FEEDBACK1_URL from '../assets/images/DispatcherFeedback1.svg';
+import DISPATCHER_FEEDBACK2AND4_URL from '../assets/images/DispatcherFeedback2And4.svg';
+import DISPATCHER_FEEDBACK3_URL from '../assets/images/DispatcherFeedback3.svg';
+import PRIVACY_ICON_URL from '../assets/images/PrivacyTagIcon.svg';
+import SHIELD_LARGE_URL from '../assets/images/PrivacyShieldCardIcon.svg';
+import PDF_ICON_URL from '../assets/images/PdfIcon.svg';
+import AVATAR1_URL from '../assets/images/TemplateItemEncodeImage1.svg';
+import AVATAR2_URL from '../assets/images/TemplateItemEncodeImage2.svg';
 
-// Feature card images and logos from new Figma design (updated)
-const FEATURE_SIGN_PDF_SCREENSHOT = "https://www.figma.com/api/mcp/asset/6e992a32-7ab4-4042-8901-5c41c271d6f5";
-const FEATURE_SEND_EMAIL_SCREENSHOT = "https://www.figma.com/api/mcp/asset/bb130214-50bf-4efd-af58-77cea2bbd127";
-const SNAPSIGN_LOGO_ICON = "https://www.figma.com/api/mcp/asset/54d31e45-6885-4a3b-9c8f-378ad7405887";
-const SNAPSIGN_LOGO_TEXT = "https://www.figma.com/api/mcp/asset/0e48781a-c9af-4a0c-a124-c05808b2889d";
-const SNAPSIGN_LOGO_R = "https://www.figma.com/api/mcp/asset/674f4deb-177a-4f1b-af64-22637f46ee82";
-const SNAPMAIL_LOGO_ICON = "https://www.figma.com/api/mcp/asset/18ef0ed5-75a9-4232-b039-889afaa07619";
-const SNAPMAIL_LOGO_TEXT = "https://www.figma.com/api/mcp/asset/efee9641-3411-46a5-a68c-4336a928e83a";
-const SNAPMAIL_LOGO_R = "https://www.figma.com/api/mcp/asset/046dd136-0372-44b9-b431-51c95e48e7a1";
+// Feature card images and logos
+import FEATURE_SIGN_PDF_SCREENSHOT from '../assets/images/FeatureCardSplitImageSign.svg';
+import FEATURE_SEND_EMAIL_SCREENSHOT from '../assets/images/FeatureCardSplitImageEmail.svg';
+import SNAPSIGN_LOGO_TEXT from '../assets/images/SnapSignLogoStandaloneFeaturesSectionPreviewCard.svg';
+import SNAPMAIL_LOGO_TEXT from '../assets/images/SnapMailLogoStandaloneFeaturesSectionPreviewCard.svg';
 
 function Home() {
   const { language } = useLanguage();
@@ -87,7 +85,7 @@ function Home() {
               </div>
               <div className="hero-title-line">
                 <img 
-                  src={SIGN_VECTOR_URL} 
+                  src={HERO_SIGN_GRAPHIC} 
                   alt="Sign" 
                   className="hero-sign-vector"
                 />
@@ -141,9 +139,7 @@ function Home() {
                   <div className="feature-card-split-content">
                     <div className="feature-card-split-header">
                       <div className="feature-card-logo">
-                        <img src={SNAPSIGN_LOGO_ICON} alt="" className="logo-icon" />
                         <img src={SNAPSIGN_LOGO_TEXT} alt="SNAPSIGN" className="logo-text" />
-                        <img src={SNAPSIGN_LOGO_R} alt="" className="logo-r" />
                       </div>
                       <h3>{getTranslation(language, 'features.card2.title')}</h3>
                     </div>
@@ -161,9 +157,7 @@ function Home() {
                   <div className="feature-card-split-content">
                     <div className="feature-card-split-header">
                       <div className="feature-card-logo">
-                        <img src={SNAPMAIL_LOGO_ICON} alt="" className="logo-icon" />
                         <img src={SNAPMAIL_LOGO_TEXT} alt="SNAPMAIL" className="logo-text" />
-                        <img src={SNAPMAIL_LOGO_R} alt="" className="logo-r" />
                       </div>
                       <h3>{getTranslation(language, 'features.card1.title')}</h3>
                     </div>
@@ -215,7 +209,7 @@ function Home() {
               <div className="feedback-card">
                 <div className="feedback-user">
                   <div className="feedback-avatar">
-                    <img src={USER_AVATAR_URL} alt="" />
+                    <img src={DISPATCHER_FEEDBACK1_URL} alt="" />
                   </div>
                   <div className="feedback-user-info">
                     <h3>{getTranslation(language, 'feedback.card1.name')}</h3>
@@ -228,7 +222,7 @@ function Home() {
               <div className="feedback-card">
                 <div className="feedback-user">
                   <div className="feedback-avatar">
-                    <img src={USER_AVATAR2_URL} alt="" />
+                    <img src={DISPATCHER_FEEDBACK2AND4_URL} alt="" />
                   </div>
                   <div className="feedback-user-info">
                     <h3>{getTranslation(language, 'feedback.card2.name')}</h3>
@@ -241,7 +235,7 @@ function Home() {
               <div className="feedback-card">
                 <div className="feedback-user">
                   <div className="feedback-avatar">
-                    <img src={USER_AVATAR_URL} alt="" />
+                    <img src={DISPATCHER_FEEDBACK3_URL} alt="" />
                   </div>
                   <div className="feedback-user-info">
                     <h3>{getTranslation(language, 'feedback.card3.name')}</h3>
@@ -254,7 +248,7 @@ function Home() {
               <div className="feedback-card">
                 <div className="feedback-user">
                   <div className="feedback-avatar">
-                    <img src={USER_AVATAR_URL} alt="" />
+                    <img src={DISPATCHER_FEEDBACK2AND4_URL} alt="" />
                   </div>
                   <div className="feedback-user-info">
                     <h3>{getTranslation(language, 'feedback.card4.name')}</h3>

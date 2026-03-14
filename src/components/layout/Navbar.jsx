@@ -3,9 +3,8 @@ import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { useLanguage } from '../../contexts/LanguageContext';
 import { getTranslation } from '../../translations';
 import './Navbar.css';
-
-const LOGO_URL = "https://www.figma.com/api/mcp/asset/efa03553-ec2a-4d9f-b31c-648084987728";
-const CHROME_ICON_URL = "https://www.figma.com/api/mcp/asset/c7aef9f3-c1e9-4f19-8d2c-4a96376850a5";
+import SnaptoolsLogoNav from '../../assets/images/SnaptoolsLogoNav.svg';
+import ChromeIconButtonNav from '../../assets/images/ChromeIconButtonNav.svg';
 
 const languages = [
   { code: 'EN', name: 'English' },
@@ -97,7 +96,7 @@ function Navbar() {
       <div className="navbar-container">
         <div className="navbar-left">
           <Link to="/" className="navbar-logo">
-            <img src={LOGO_URL} alt="SNAPTOOLS" />
+            <img src={SnaptoolsLogoNav} alt="SNAPTOOLS" />
           </Link>
 
           <div className={`navbar-links ${isMobileMenuOpen ? 'navbar-links-open' : ''}`}>
@@ -153,7 +152,7 @@ function Navbar() {
             rel="noopener noreferrer"
             className="navbar-cta"
           >
-            <img src={CHROME_ICON_URL} alt="Chrome" className="chrome-icon" />
+            <img src={ChromeIconButtonNav} alt="Chrome" className="chrome-icon" />
             {getTranslation(language, 'nav.addToChrome')}
           </a>
         </div>

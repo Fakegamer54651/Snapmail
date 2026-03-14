@@ -378,23 +378,16 @@
   aspect-ratio: 600.5 / 235;
   position: relative;
   overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .feature-card-split-image img {
-  position: absolute;
-  top: 5.61%;
-  left: 1.41%;
-  width: 97.19%;
-  height: 185.22%;
-  max-width: none;
-  object-fit: cover;
-}
-
-.feature-card-blue .feature-card-split-image img {
-  top: 6.82%;
-  left: 1.29%;
-  width: 97.25%;
-  height: 184%;
+  width: 100%;
+  height: 100%;
+  max-width: 100%;
+  object-fit: contain;
 }
 
 .feature-card-image {
